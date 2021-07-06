@@ -1,0 +1,65 @@
+﻿{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Sneha.T.ipynb",
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-Nw4tqPD7VCq",
+        "outputId": "dbad24f8-8a99-4fb3-81fa-77ef1e9f35c9"
+      },
+      "source": [
+        "# Python 3 code to demonstrate the \n",
+        "\n",
+        "# working of MD5 (string - hexadecimal)\n",
+        "\n",
+        "\n",
+        "\n",
+        "import hashlib\n",
+        "\n",
+        "# initializing string\n",
+        "\n",
+        "str2hash = \"SnehaThiru\"\n",
+        "\n",
+        "# encoding SnehaThiru using encode()\n",
+        "\n",
+        "# then sending to md5()\n",
+        "\n",
+        "result = hashlib.md5(str2hash.encode())\n",
+        "\n",
+        "\n",
+        "# printing the equivalent hexadecimal value.\n",
+        "\n",
+        "print(\"The hexadecimal equivalent of hash is : \", end =\"\")\n",
+        "\n",
+        "print(result.hexdigest())"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The hexadecimal equivalent of hash is : fabeed45dbff137b002c12bf8290ec13\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
